@@ -201,7 +201,7 @@ class ODQADataReader(DatasetReader):
                 for doc in data:
                     if not doc:
                         continue
-                    text = doc['text']
+                    text = doc['text'][0]
                     normalized_text = unicodedata.normalize('NFD', text)
                     docs.append((doc['title'], normalized_text))
         return docs
