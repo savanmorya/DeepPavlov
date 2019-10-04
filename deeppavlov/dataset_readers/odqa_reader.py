@@ -185,7 +185,7 @@ class ODQADataReader(DatasetReader):
     @staticmethod
     def _get_json_contents(fpath: Union[Path, str]) -> List[Tuple[str, str]]:
         """Extract file contents from '.json' file. JSON files should be formatted as list with dicts
-        which contain 'title' and 'doc' keywords.
+        which contain 'title' and 'text' keywords.
 
         Args:
             fpath: path to a '.json' file.
